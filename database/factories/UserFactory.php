@@ -28,6 +28,7 @@ class UserFactory extends Factory
             'username' => fake()->userName(),
             'avator'=>'https://i.pravatar.cc/150?u'.fake()->randomNumber(3,40),
             'email' => fake()->unique()->safeEmail(),
+            'thumbnail' => fake()->pack(),
             'password' => fake()->password(),
              
            

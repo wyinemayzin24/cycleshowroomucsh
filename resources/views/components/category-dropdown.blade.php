@@ -1,6 +1,6 @@
 <div class="dropdown">
   <button class="btn btn-outline dropdown-toggle fs-5" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-   {{isset($currentCategory)? $currentCategory->name:'FilleredByModel'}}
+   {{isset($currentCategory)? $currentCategory->name:'FilteredByModel'}}
   </button>
   <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
    

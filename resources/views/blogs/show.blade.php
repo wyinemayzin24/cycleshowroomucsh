@@ -8,18 +8,34 @@
             alt="..."
           />
           <h3 class="my-3">{{$blog->title}}</h3>
-          <div>
+           
+           <div>
             <div><h4>Author -{{$blog->author->name}} </h4></div>
-            <div><span>{{$blog->category->name}}</span></a></div>
-            <div></div>
+            
+            <div>  <h5><div class="btn btn-outline-primary">
+          {{$blog->category->name}}
+          </div></h5></div>
           </div>
           <p class="lh-md">
-         {{$blog->body}}
-          </p>
-          <div><h5>Created - {{$blog->created_at->diffForHumans()}}</h5> </div>
-          <div><h5>Price - {{$blog->price}}</h5> </div>
+         
+         <p class=" text-start"> {{$blog->body}}
+        <div class="row">
+          <div class="col-md-4">
+         
+          </div>
+          <div  class="col-md-4">
+         <h5> <div class="btn btn-outline-success mb-3 "><h5>Price - {{$blog->price}}</h5> </div></h5>
               
-          <div>
+              <div class="col-md-4">
+          </div>
+          <div></div>
+        </div>
+         </p>
+         
+          </p>
+           
+          <div><h5>Created - {{$blog->created_at->diffForHumans()}}</h5> </div>
+          
         <!-- <form action="/blogs/{{$blog->slug}}/subscription" 
         method="POST"
         >

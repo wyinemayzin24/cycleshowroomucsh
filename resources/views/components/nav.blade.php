@@ -14,8 +14,13 @@
         <a href="/admin/blogs" class="nav-link">DashBoard </a>
         @endcan
 
-  
-          
+  <div>
+    
+  <img class="rounded-circle shadow-1-strong me-3"
+            src="/storage/{{auth()->user()->thumbnail}}" alt="avatar" width="40"
+               height="40" />
+            
+  </div>
           <a href="" class="nav-link">Welcome{{auth()->user()->name}} </a>
           <form action="/logout" method="POST">
             @csrf

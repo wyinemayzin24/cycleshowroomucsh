@@ -5,7 +5,7 @@
        <div class="mb-3">
    
         <textarea 
-        required
+        
         name="body" cols="10" 
    class="form-control border border-0 " rows="5" 
    placeholder="Say Somethings">

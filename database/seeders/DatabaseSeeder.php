@@ -19,15 +19,15 @@ class DatabaseSeeder extends Seeder
         
 
          
-        $mgmg=User::factory()->create(['name'=>'mgmg','username'=>'mgmg']);
-        $aungaung=User::factory()->create(['name'=>'aungaung','username'=>'aungaung']);
+        $nwk=User::factory()->create(['name'=>'naingwinko','username'=>'naingwinko']);
+        $wmz=User::factory()->create(['name'=>'wyinemayzin','username'=>'wyinemayzin']);
         
         
-    $frondend=  Category::factory()->create(['name'=>'frondend','slug'=>'frondend']);
-    $backend=  Category::factory()->create(['name'=>'backend','slug'=>'backend']);
+    $c1=  Category::factory()->create(['name'=>'2023model','slug'=>'2023model']);
+    $c2=  Category::factory()->create(['name'=>'2024model','slug'=>'2024model']);
       
-    Blog::factory(2)->create(['category_id'=>$frondend->id,'user_id'=>$mgmg->id]);
-    Blog::factory(2)->create(['category_id'=>$backend->id,'user_id'=>$aungaung->id]);
+    Blog::factory(2)->create(['category_id'=>$c1->id,'user_id'=>$nwk->id]);
+    Blog::factory(2)->create(['category_id'=>$c2->id,'user_id'=>$wmz->id]);
        
     }
 }

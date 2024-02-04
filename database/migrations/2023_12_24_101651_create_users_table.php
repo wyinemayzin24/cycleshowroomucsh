@@ -18,6 +18,7 @@ return new class extends Migration
             $table->boolean('is_admin')->default(false);
             $table->string('email');
             $table->string('password');
+            $table->string('thumbnail')->nullable();
             $table->timestamps();
         });
     }
